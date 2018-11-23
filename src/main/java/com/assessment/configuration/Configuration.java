@@ -51,24 +51,26 @@ public class Configuration {
 	}
 
 	private void loadProperties(String propertiesFilePath) throws IOException {
-		properties = System.getProperties();
-		properties.load(getClass().getResourceAsStream(propertiesFilePath));
-		String os = properties.getProperty("os.name").toLowerCase();
-		for (Object key : properties.keySet()) {
-			if (key.toString().startsWith("webdriver")) {
-				String path = System.getProperty(key.toString());
-				if (os.startsWith("win")) {
-					path += ".exe";
-				}
-				try {
-					properties.setProperty(key.toString(), getResourceFilePath(path));
-				} catch (Exception e) {
-					e.printStackTrace();
-					logger.error(e);
+		try {
+			properties = System.getProperties();
+			properties.load(getClass().getResourceAsStream(propertiesFilePath));
+			String os = properties.getProperty("os.name").toLowerCase();
+			for (Object key : properties.keySet()) {
+				if (key.toString().startsWith("webdriver")) {
+					String path = System.getProperty(key.toString());
+					if (os.startsWith("win")) {
+						path += ".exe";
+					}
+					try {
+						properties.setProperty(key.toString(), getResourceFilePath(path));
+					} catch (Exception e) {
+						logger.error(e);
+					}
 				}
 			}
+			System.setProperties(properties);
+		} catch (Exception e) {
 		}
-		System.setProperties(properties);
 	}
 
 	public String readProperty(String key) {
@@ -97,7 +99,7 @@ public class Configuration {
 		File file = null;
 		String resource = path;
 		URL res = getClass().getResource(resource);
-		if (res.toString().startsWith("jar:")) {
+		if (res != null && res.toString().startsWith("jar:")) {
 			try {
 				InputStream input = getClass().getResourceAsStream(resource);
 				file = File.createTempFile("tempfile", ".tmp");

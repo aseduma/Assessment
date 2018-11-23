@@ -72,7 +72,7 @@ public class UserTest {
 			report.setDate(localDate);
 			report.setDuration(System.nanoTime() - start);
 			reports.add(report);
-			Assert.assertEquals(report.getExpected(), report.getStatus());
+			Assert.assertEquals(report.getExpected() != null ? report.getExpected() : Status.PASS, report.getStatus());
 		} else {
 			Assert.assertEquals(Status.PASS, Status.FAIL);
 		}

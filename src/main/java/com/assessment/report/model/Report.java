@@ -4,16 +4,12 @@
 package com.assessment.report.model;
 
 import java.util.List;
-import java.util.Map;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.joda.time.LocalDate;
-
-import com.assessment.task2.model.user.User;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * @author w5100593
@@ -26,7 +22,7 @@ public class Report {
 	private Status expected;
 	private String comments;
 	private List<String> screenshots;
-	private Map<String, String> data;
+	private Object data;
 	private LocalDate date;
 	private long duration;
 
@@ -48,13 +44,10 @@ public class Report {
 	 * @param status
 	 * @param data
 	 */
-	public Report(Status status, Map<String, String> data) {
+	public Report(Status status, Object data) {
 		super();
 		this.status = status;
 		this.data = data;
-
-		User user = new ObjectMapper().convertValue(data, User.class);
-		this.expected = user.getExpected();
 	}
 
 	/**
@@ -72,13 +65,11 @@ public class Report {
 	 * @param comments
 	 * @param data
 	 */
-	public Report(Status status, String comments, Map<String, String> data) {
+	public Report(Status status, String comments, Object data) {
 		super();
 		this.status = status;
 		this.comments = comments;
 		this.data = data;
-		User user = new ObjectMapper().convertValue(data, User.class);
-		this.expected = user.getExpected();
 	}
 
 	/**
@@ -87,14 +78,12 @@ public class Report {
 	 * @param screenshots
 	 * @param data
 	 */
-	public Report(Status status, String comments, List<String> screenshots, Map<String, String> data) {
+	public Report(Status status, String comments, List<String> screenshots, Object data) {
 		super();
 		this.status = status;
 		this.comments = comments;
 		this.screenshots = screenshots;
 		this.data = data;
-		User user = new ObjectMapper().convertValue(data, User.class);
-		this.expected = user.getExpected();
 	}
 
 	/**
@@ -102,13 +91,11 @@ public class Report {
 	 * @param screenshots
 	 * @param data
 	 */
-	public Report(Status status, List<String> screenshots, Map<String, String> data) {
+	public Report(Status status, List<String> screenshots, Object data) {
 		super();
 		this.status = status;
 		this.screenshots = screenshots;
 		this.data = data;
-		User user = new ObjectMapper().convertValue(data, User.class);
-		this.expected = user.getExpected();
 	}
 
 	/**
@@ -178,7 +165,7 @@ public class Report {
 	/**
 	 * @return the data
 	 */
-	public Map<String, String> getData() {
+	public Object getData() {
 		return data;
 	}
 
@@ -186,8 +173,8 @@ public class Report {
 	 * @param data
 	 *            the data to set
 	 */
-	@XmlElement
-	public void setData(Map<String, String> data) {
+
+	public void setData(Object data) {
 		this.data = data;
 	}
 

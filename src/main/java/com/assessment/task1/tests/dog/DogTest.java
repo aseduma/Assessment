@@ -1,6 +1,5 @@
 package com.assessment.task1.tests.dog;
 
-import static org.hamcrest.CoreMatchers.hasItem;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -8,9 +7,9 @@ import static org.junit.Assert.assertNotNull;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.hamcrest.collection.IsMapContaining;
 import org.joda.time.LocalDate;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -20,17 +19,15 @@ import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestName;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.client.RestTemplate;
 
 import com.assessment.configuration.Configuration;
 import com.assessment.report.ReportGenerator;
 import com.assessment.report.model.Report;
 import com.assessment.report.model.Status;
 import com.assessment.task1.model.dog.Breed;
-import com.assessment.task1.model.dog.Response;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.assessment.task1.model.dog.BreedRandomImage;
+import com.assessment.task1.model.dog.SubBreed;
+import com.assessment.utils.RestConnector;
 
 /**
  * @author Azael
@@ -74,7 +71,7 @@ public class DogTest extends Configuration {
 			report.setDate(localDate);
 			report.setDuration(System.nanoTime() - start);
 			reports.add(report);
-			Assert.assertEquals(report.getExpected(), report.getStatus());
+			Assert.assertEquals(report.getExpected() != null ? report.getExpected() : Status.PASS, report.getStatus());
 		} else {
 			Assert.assertEquals(Status.PASS, Status.FAIL);
 		}
@@ -88,27 +85,16 @@ public class DogTest extends Configuration {
 
 		try {
 			// consume api
-			RestTemplate restTemplate = new RestTemplate();
-			ResponseEntity<Response> responseEntity = restTemplate.getForEntity(url, Response.class);
+			Breed breed = (Breed) RestConnector.getResponseEntityObject(url, Breed.class);
 
-			// Test equal.
-			assertEquals(responseEntity.getStatusCode(), HttpStatus.OK);
+			assertNotNull(breed);
 
-			// get api body
-			Response actualResponse = responseEntity.getBody();
+			assertEquals(breed.getStatus(), "success");
 
-			assertNotNull(actualResponse);
-
-			assertEquals(actualResponse.getStatus(), "success");
-
-			assertNotNull(actualResponse.getMessage());
-
-			List<Breed> breeds = actualResponse.getMessage().getBreeds();
-			assertNotNull(breeds);
-
+			assertNotNull(breed.getMessage());
 			// check empty list
-			assertFalse(breeds.isEmpty());
-			report = new Report(Status.PASS, url, new ObjectMapper().convertValue(actualResponse, Map.class));
+			assertFalse(breed.getMessage().isEmpty());
+			report = new Report(Status.PASS, url, breed.toString());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			report = new Report(Status.FAIL, url + e.getMessage());
@@ -123,34 +109,18 @@ public class DogTest extends Configuration {
 		logger.info(url);
 		try {
 			// consume api
-			RestTemplate restTemplate = new RestTemplate();
-			ResponseEntity<Response> responseEntity = restTemplate.getForEntity(url, Response.class);
+			Breed breed = (Breed) RestConnector.getResponseEntityObject(url, Breed.class);
 
-			// Test equal.
-			assertEquals(responseEntity.getStatusCode(), HttpStatus.OK);
+			assertNotNull(breed);
 
-			// get api body
-			Response actualResponse = responseEntity.getBody();
+			assertEquals(breed.getStatus(), "success");
 
-			assertNotNull(actualResponse);
-
-			assertEquals(actualResponse.getStatus(), "success");
-
-			assertNotNull(actualResponse.getMessage());
-
-			List<Breed> breeds = actualResponse.getMessage().getBreeds();
-			assertNotNull(breeds);
-
+			assertNotNull(breed.getMessage());
 			// check empty list
-			assertFalse(breeds.isEmpty());
+			assertFalse(breed.getMessage().isEmpty());
 
-			List<String> _breeds = new ArrayList<>();
-
-			for (Breed breed : breeds) {
-				_breeds.add(breed.getName());
-			}
-			assertThat(_breeds, hasItem(SUB_BREED));
-			report = new Report(Status.PASS, url, new ObjectMapper().convertValue(actualResponse, Map.class));
+			assertThat(breed.getMessage(), IsMapContaining.hasKey(BREED));
+			report = new Report(Status.PASS, url, breed.toString());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			report = new Report(Status.FAIL, url + e.getMessage());
@@ -163,37 +133,17 @@ public class DogTest extends Configuration {
 		logger.info(url);
 		try {
 			// consume api
-			RestTemplate restTemplate = new RestTemplate();
-			ResponseEntity<Response> responseEntity = restTemplate.getForEntity(url, Response.class);
+			SubBreed subBreed = (SubBreed) RestConnector.getResponseEntityObject(url, SubBreed.class);
 
-			// Test equal.
-			assertEquals(responseEntity.getStatusCode(), HttpStatus.OK);
+			assertNotNull(subBreed);
 
-			// get api body
-			Response actualResponse = responseEntity.getBody();
+			assertEquals(subBreed.getStatus(), "success");
 
-			assertNotNull(actualResponse);
-
-			assertEquals(actualResponse.getStatus(), "success");
-
-			assertNotNull(actualResponse.getMessage());
-
-			List<Breed> breeds = actualResponse.getMessage().getBreeds();
-			assertNotNull(breeds);
-
+			assertNotNull(subBreed.getMessage());
 			// check empty list
-			assertFalse(breeds.isEmpty());
+			assertFalse(subBreed.getMessage().isEmpty());
 
-			List<Breed> subBreeds = new ArrayList<>();
-			for (Breed breed : breeds) {
-				subBreeds.addAll(breed.getSubBreeds());
-			}
-
-			assertNotNull(subBreeds);
-
-			// check empty list
-			assertFalse(subBreeds.isEmpty());
-			report = new Report(Status.PASS, url, new ObjectMapper().convertValue(actualResponse, Map.class));
+			report = new Report(Status.PASS, url, subBreed.toString());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			report = new Report(Status.FAIL, url + e.getMessage());
@@ -206,22 +156,16 @@ public class DogTest extends Configuration {
 		logger.info(url);
 		try {
 			// consume api
-			RestTemplate restTemplate = new RestTemplate();
-			ResponseEntity<Response> responseEntity = restTemplate.getForEntity(url, Response.class);
+			BreedRandomImage breedRandomImage = (BreedRandomImage) RestConnector.getResponseEntityObject(url,
+					BreedRandomImage.class);
 
-			// Test equal.
-			assertEquals(responseEntity.getStatusCode(), HttpStatus.OK);
+			assertNotNull(breedRandomImage);
 
-			// get api body
-			Response actualResponse = responseEntity.getBody();
+			assertEquals(breedRandomImage.getStatus(), "success");
+			assertNotNull(breedRandomImage.getMessage());
 
-			assertNotNull(actualResponse);
-
-			assertEquals(actualResponse.getStatus(), "success");
-			assertNotNull(actualResponse.getMessage());
-
-			assertFalse(actualResponse.getMessage().toString().isEmpty());
-			report = new Report(Status.PASS, url, new ObjectMapper().convertValue(actualResponse, Map.class));
+			assertFalse(breedRandomImage.getMessage().isEmpty());
+			report = new Report(Status.PASS, url, breedRandomImage.toString());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			report = new Report(Status.FAIL, url + e.getMessage());
