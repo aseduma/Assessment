@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<report-overview reportDate="2018-11-23T09:40:10.668+02:00">
+    <report method="users[0: {name=User Suite 0, action=Edit User, expected=FAIL, firstName=Test 900, lastName=Test 900, userName=test900, password=1234, customer=15, role=Customer, email=test900@test.com, cellPhone=0743519649, isLocked=false}]">
+        <data>
+            <entry>
+                <key>name</key>
+                <value>User Suite 0</value>
+            </entry>
+            <entry>
+                <key>action</key>
+                <value>Edit User</value>
+            </entry>
+            <entry>
+                <key>expected</key>
+                <value>FAIL</value>
+            </entry>
+            <entry>
+                <key>firstName</key>
+                <value>Test 900</value>
+            </entry>
+            <entry>
+                <key>lastName</key>
+                <value>Test 900</value>
+            </entry>
+            <entry>
+                <key>userName</key>
+                <value>test900</value>
+            </entry>
+            <entry>
+                <key>password</key>
+                <value>1234</value>
+            </entry>
+            <entry>
+                <key>customer</key>
+                <value>15</value>
+            </entry>
+            <entry>
+                <key>role</key>
+                <value>Customer</value>
+            </entry>
+            <entry>
+                <key>email</key>
+                <value>test900@test.com</value>
+            </entry>
+            <entry>
+                <key>cellPhone</key>
+                <value>0743519649</value>
+            </entry>
+            <entry>
+                <key>isLocked</key>
+                <value>false</value>
+            </entry>
+        </data>
+        <date/>
+        <duration>33380431</duration>
+        <expected>FAIL</expected>
+        <status>PASS</status>
+    </report>
+    <report method="users[1: {name=User Suite 1, action=Remove User, expected=FAIL, firstName=Test 982, lastName=Test 982, userName=test982, password=1234, customer=16, role=Sales Team, email=test982@test.com, cellPhone=0743519649, isLocked=false}]">
+        <data>
+            <entry>
+                <key>name</key>
+                <value>User Suite 1</value>
+            </entry>
+            <entry>
+                <key>action</key>
+                <value>Remove User</value>
+            </entry>
+            <entry>
+                <key>expected</key>
+                <value>FAIL</value>
+            </entry>
+            <entry>
+                <key>firstName</key>
+                <value>Test 982</value>
+            </entry>
+            <entry>
+                <key>lastName</key>
+                <value>Test 982</value>
+            </entry>
+            <entry>
+                <key>userName</key>
+                <value>test982</value>
+            </entry>
+            <entry>
+                <key>password</key>
+                <value>1234</value>
+            </entry>
+            <entry>
+                <key>customer</key>
+                <value>16</value>
+            </entry>
+            <entry>
+                <key>role</key>
+                <value>Sales Team</value>
+            </entry>
+            <entry>
+                <key>email</key>
+                <value>test982@test.com</value>
+            </entry>
+            <entry>
+                <key>cellPhone</key>
+                <value>0743519649</value>
+            </entry>
+            <entry>
+                <key>isLocked</key>
+                <value>false</value>
+            </entry>
+        </data>
+        <date/>
+        <duration>4917993</duration>
+        <expected>FAIL</expected>
+        <status>PASS</status>
+    </report>
+    <report method="users[2: {name=User Suite 2, action=Add User, expected=PASS, firstName=Test 818, lastName=Test 818, userName=test818, password=1234, customer=16, role=Admin, email=test818@test.com, cellPhone=0743519649, isLocked=false}]">
+        <data>
+            <entry>
+                <key>name</key>
+                <value>User Suite 2</value>
+            </entry>
+            <entry>
+                <key>action</key>
+                <value>Add User</value>
+            </entry>
+            <entry>
+                <key>expected</key>
+                <value>PASS</value>
+            </entry>
+            <entry>
+                <key>firstName</key>
+                <value>Test 818</value>
+            </entry>
+            <entry>
+                <key>lastName</key>
+                <value>Test 818</value>
+            </entry>
+            <entry>
+                <key>userName</key>
+                <value>test818</value>
+            </entry>
+            <entry>
+                <key>password</key>
+                <value>1234</value>
+            </entry>
+            <entry>
+                <key>customer</key>
+                <value>16</value>
+            </entry>
+            <entry>
+                <key>role</key>
+                <value>Admin</value>
+            </entry>
+            <entry>
+                <key>email</key>
+                <value>test818@test.com</value>
+            </entry>
+            <entry>
+                <key>cellPhone</key>
+                <value>0743519649</value>
+            </entry>
+            <entry>
+                <key>isLocked</key>
+                <value>false</value>
+            </entry>
+        </data>
+        <date/>
+        <duration>2306891080</duration>
+        <expected>PASS</expected>
+        <screenshots>screenshots/1542958795212.png</screenshots>
+        <screenshots>screenshots/1542958795780.png</screenshots>
+        <screenshots>screenshots/1542958796255.png</screenshots>
+        <status>PASS</status>
+    </report>
+    <report method="users[3: {name=User Suite 3, action=Edit User, expected=PASS, firstName=Test 314, lastName=Test 314, userName=test314, password=1234, customer=16, role=Admin, email=test314@test.com, cellPhone=0743519649, isLocked=false}]">
+        <data>
+            <entry>
+                <key>name</key>
+                <value>User Suite 3</value>
+            </entry>
+            <entry>
+                <key>action</key>
+                <value>Edit User</value>
+            </entry>
+            <entry>
+                <key>expected</key>
+                <value>PASS</value>
+            </entry>
+            <entry>
+                <key>firstName</key>
+                <value>Test 314</value>
+            </entry>
+            <entry>
+                <key>lastName</key>
+                <value>Test 314</value>
+            </entry>
+            <entry>
+                <key>userName</key>
+                <value>test314</value>
+            </entry>
+            <entry>
+                <key>password</key>
+                <value>1234</value>
+            </entry>
+            <entry>
+                <key>customer</key>
+                <value>16</value>
+            </entry>
+            <entry>
+                <key>role</key>
+                <value>Admin</value>
+            </entry>
+            <entry>
+                <key>email</key>
+                <value>test314@test.com</value>
+            </entry>
+            <entry>
+                <key>cellPhone</key>
+                <value>0743519649</value>
+            </entry>
+            <entry>
+                <key>isLocked</key>
+                <value>false</value>
+            </entry>
+        </data>
+        <date/>
+        <duration>1898855</duration>
+        <expected>PASS</expected>
+        <status>PASS</status>
+    </report>
+    <report method="users[4: {name=User Suite 4, action=Assert User, expected=PASS, firstName=Test 325, lastName=Test 325, userName=test325, password=1234, customer=15, role=Sales Team, email=test325@test.com, cellPhone=0743519649, isLocked=false}]">
+        <date/>
+        <duration>1568732589</duration>
+        <status>PASS</status>
+    </report>
+    <report method="users[5: {name=User Suite 5, action=Edit User, expected=PASS, firstName=Test 546, lastName=Test 546, userName=test546, password=1234, customer=16, role=Customer, email=test546@test.com, cellPhone=0743519649, isLocked=false}]">
+        <data>
+            <entry>
+                <key>name</key>
+                <value>User Suite 5</value>
+            </entry>
+            <entry>
+                <key>action</key>
+                <value>Edit User</value>
+            </entry>
+            <entry>
+                <key>expected</key>
+                <value>PASS</value>
+            </entry>
+            <entry>
+                <key>firstName</key>
+                <value>Test 546</value>
+            </entry>
+            <entry>
+                <key>lastName</key>
+                <value>Test 546</value>
+            </entry>
+            <entry>
+                <key>userName</key>
+                <value>test546</value>
+            </entry>
+            <entry>
+                <key>password</key>
+                <value>1234</value>
+            </entry>
+            <entry>
+                <key>customer</key>
+                <value>16</value>
+            </entry>
+            <entry>
+                <key>role</key>
+                <value>Customer</value>
+            </entry>
+            <entry>
+                <key>email</key>
+                <value>test546@test.com</value>
+            </entry>
+            <entry>
+                <key>cellPhone</key>
+                <value>0743519649</value>
+            </entry>
+            <entry>
+                <key>isLocked</key>
+                <value>false</value>
+            </entry>
+        </data>
+        <date/>
+        <duration>1849014</duration>
+        <expected>PASS</expected>
+        <status>PASS</status>
+    </report>
+    <report method="users[6: {name=User Suite 6, action=Assert User, expected=PASS, firstName=Test 169, lastName=Test 169, userName=test169, password=1234, customer=15, role=Admin, email=test169@test.com, cellPhone=0743519649, isLocked=false}]">
+        <date/>
+        <duration>1295439047</duration>
+        <status>PASS</status>
+    </report>
+    <report method="users[7: {name=User Suite 7, action=Edit User, expected=PASS, firstName=Test 855, lastName=Test 855, userName=test855, password=1234, customer=16, role=Sales Team, email=test855@test.com, cellPhone=0743519649, isLocked=false}]">
+        <data>
+            <entry>
+                <key>name</key>
+                <value>User Suite 7</value>
+            </entry>
+            <entry>
+                <key>action</key>
+                <value>Edit User</value>
+            </entry>
+            <entry>
+                <key>expected</key>
+                <value>PASS</value>
+            </entry>
+            <entry>
+                <key>firstName</key>
+                <value>Test 855</value>
+            </entry>
+            <entry>
+                <key>lastName</key>
+                <value>Test 855</value>
+            </entry>
+            <entry>
+                <key>userName</key>
+                <value>test855</value>
+            </entry>
+            <entry>
+                <key>password</key>
+                <value>1234</value>
+            </entry>
+            <entry>
+                <key>customer</key>
+                <value>16</value>
+            </entry>
+            <entry>
+                <key>role</key>
+                <value>Sales Team</value>
+            </entry>
+            <entry>
+                <key>email</key>
+                <value>test855@test.com</value>
+            </entry>
+            <entry>
+                <key>cellPhone</key>
+                <value>0743519649</value>
+            </entry>
+            <entry>
+                <key>isLocked</key>
+                <value>false</value>
+            </entry>
+        </data>
+        <date/>
+        <duration>1834667</duration>
+        <expected>PASS</expected>
+        <status>PASS</status>
+    </report>
+    <report method="users[8: {name=User Suite 8, action=Assert User, expected=PASS, firstName=Test 127, lastName=Test 127, userName=test127, password=1234, customer=15, role=Admin, email=test127@test.com, cellPhone=0743519649, isLocked=false}]">
+        <date/>
+        <duration>1098371569</duration>
+        <status>PASS</status>
+    </report>
+    <report method="users[9: {name=User Suite 9, action=Edit User, expected=FAIL, firstName=Test 775, lastName=Test 775, userName=test775, password=1234, customer=15, role=Admin, email=test775@test.com, cellPhone=0743519649, isLocked=false}]">
+        <data>
+            <entry>
+                <key>name</key>
+                <value>User Suite 9</value>
+            </entry>
+            <entry>
+                <key>action</key>
+                <value>Edit User</value>
+            </entry>
+            <entry>
+                <key>expected</key>
+                <value>FAIL</value>
+            </entry>
+            <entry>
+                <key>firstName</key>
+                <value>Test 775</value>
+            </entry>
+            <entry>
+                <key>lastName</key>
+                <value>Test 775</value>
+            </entry>
+            <entry>
+                <key>userName</key>
+                <value>test775</value>
+            </entry>
+            <entry>
+                <key>password</key>
+                <value>1234</value>
+            </entry>
+            <entry>
+                <key>customer</key>
+                <value>15</value>
+            </entry>
+            <entry>
+                <key>role</key>
+                <value>Admin</value>
+            </entry>
+            <entry>
+                <key>email</key>
+                <value>test775@test.com</value>
+            </entry>
+            <entry>
+                <key>cellPhone</key>
+                <value>0743519649</value>
+            </entry>
+            <entry>
+                <key>isLocked</key>
+                <value>false</value>
+            </entry>
+        </data>
+        <date/>
+        <duration>1923398</duration>
+        <expected>FAIL</expected>
+        <status>PASS</status>
+    </report>
+    <report method="users[10: {name=User Suite 10, action=Add User, expected=PASS, firstName=Test 567, lastName=Test 567, userName=test567, password=1234, customer=15, role=Customer, email=test567@test.com, cellPhone=0743519649, isLocked=false}]">
+        <data>
+            <entry>
+                <key>name</key>
+                <value>User Suite 10</value>
+            </entry>
+            <entry>
+                <key>action</key>
+                <value>Add User</value>
+            </entry>
+            <entry>
+                <key>expected</key>
+                <value>PASS</value>
+            </entry>
+            <entry>
+                <key>firstName</key>
+                <value>Test 567</value>
+            </entry>
+            <entry>
+                <key>lastName</key>
+                <value>Test 567</value>
+            </entry>
+            <entry>
+                <key>userName</key>
+                <value>test567</value>
+            </entry>
+            <entry>
+                <key>password</key>
+                <value>1234</value>
+            </entry>
+            <entry>
+                <key>customer</key>
+                <value>15</value>
+            </entry>
+            <entry>
+                <key>role</key>
+                <value>Customer</value>
+            </entry>
+            <entry>
+                <key>email</key>
+                <value>test567@test.com</value>
+            </entry>
+            <entry>
+                <key>cellPhone</key>
+                <value>0743519649</value>
+            </entry>
+            <entry>
+                <key>isLocked</key>
+                <value>false</value>
+            </entry>
+        </data>
+        <date/>
+        <duration>1382654984</duration>
+        <expected>PASS</expected>
+        <screenshots>screenshots/1542958800814.png</screenshots>
+        <screenshots>screenshots/1542958801206.png</screenshots>
+        <screenshots>screenshots/1542958801627.png</screenshots>
+        <status>PASS</status>
+    </report>
+    <report method="users[11: {name=User Suite 11, action=Assert User, expected=FAIL, firstName=Test 775, lastName=Test 775, userName=test775, password=1234, customer=16, role=Sales Team, email=test775@test.com, cellPhone=0743519649, isLocked=false}]">
+        <date/>
+        <duration>1145229754</duration>
+        <status>PASS</status>
+    </report>
+    <report method="users[12: {name=User Suite 12, action=Assert User, expected=FAIL, firstName=Test 357, lastName=Test 357, userName=test357, password=1234, customer=16, role=Admin, email=test357@test.com, cellPhone=0743519649, isLocked=false}]">
+        <date/>
+        <duration>1022965989</duration>
+        <status>PASS</status>
+    </report>
+    <report method="users[13: {name=User Suite 13, action=Add User, expected=FAIL, firstName=Test 60, lastName=Test 60, userName=test60, password=1234, customer=16, role=Admin, email=test60@test.com, cellPhone=0743519649, isLocked=false}]">
+        <data>
+            <entry>
+                <key>name</key>
+                <value>User Suite 13</value>
+            </entry>
+            <entry>
+                <key>action</key>
+                <value>Add User</value>
+            </entry>
+            <entry>
+                <key>expected</key>
+                <value>FAIL</value>
+            </entry>
+            <entry>
+                <key>firstName</key>
+                <value>Test 60</value>
+            </entry>
+            <entry>
+                <key>lastName</key>
+                <value>Test 60</value>
+            </entry>
+            <entry>
+                <key>userName</key>
+                <value>test60</value>
+            </entry>
+            <entry>
+                <key>password</key>
+                <value>1234</value>
+            </entry>
+            <entry>
+                <key>customer</key>
+                <value>16</value>
+            </entry>
+            <entry>
+                <key>role</key>
+                <value>Admin</value>
+            </entry>
+            <entry>
+                <key>email</key>
+                <value>test60@test.com</value>
+            </entry>
+            <entry>
+                <key>cellPhone</key>
+                <value>0743519649</value>
+            </entry>
+            <entry>
+                <key>isLocked</key>
+                <value>false</value>
+            </entry>
+        </data>
+        <date/>
+        <duration>1342664619</duration>
+        <expected>FAIL</expected>
+        <screenshots>screenshots/1542958804354.png</screenshots>
+        <screenshots>screenshots/1542958804755.png</screenshots>
+        <screenshots>screenshots/1542958805167.png</screenshots>
+        <status>PASS</status>
+    </report>
+    <report method="users[14: {name=User Suite 14, action=Remove User, expected=PASS, firstName=Test 278, lastName=Test 278, userName=test278, password=1234, customer=15, role=Admin, email=test278@test.com, cellPhone=0743519649, isLocked=false}]">
+        <data>
+            <entry>
+                <key>name</key>
+                <value>User Suite 14</value>
+            </entry>
+            <entry>
+                <key>action</key>
+                <value>Remove User</value>
+            </entry>
+            <entry>
+                <key>expected</key>
+                <value>PASS</value>
+            </entry>
+            <entry>
+                <key>firstName</key>
+                <value>Test 278</value>
+            </entry>
+            <entry>
+                <key>lastName</key>
+                <value>Test 278</value>
+            </entry>
+            <entry>
+                <key>userName</key>
+                <value>test278</value>
+            </entry>
+            <entry>
+                <key>password</key>
+                <value>1234</value>
+            </entry>
+            <entry>
+                <key>customer</key>
+                <value>15</value>
+            </entry>
+            <entry>
+                <key>role</key>
+                <value>Admin</value>
+            </entry>
+            <entry>
+                <key>email</key>
+                <value>test278@test.com</value>
+            </entry>
+            <entry>
+                <key>cellPhone</key>
+                <value>0743519649</value>
+            </entry>
+            <entry>
+                <key>isLocked</key>
+                <value>false</value>
+            </entry>
+        </data>
+        <date/>
+        <duration>2147303</duration>
+        <expected>PASS</expected>
+        <status>PASS</status>
+    </report>
+    <report method="users[15: {name=User Suite 15, action=Edit User, expected=PASS, firstName=Test 665, lastName=Test 665, userName=test665, password=1234, customer=15, role=Sales Team, email=test665@test.com, cellPhone=0743519649, isLocked=false}]">
+        <data>
+            <entry>
+                <key>name</key>
+                <value>User Suite 15</value>
+            </entry>
+            <entry>
+                <key>action</key>
+                <value>Edit User</value>
+            </entry>
+            <entry>
+                <key>expected</key>
+                <value>PASS</value>
+            </entry>
+            <entry>
+                <key>firstName</key>
+                <value>Test 665</value>
+            </entry>
+            <entry>
+                <key>lastName</key>
+                <value>Test 665</value>
+            </entry>
+            <entry>
+                <key>userName</key>
+                <value>test665</value>
+            </entry>
+            <entry>
+                <key>password</key>
+                <value>1234</value>
+            </entry>
+            <entry>
+                <key>customer</key>
+                <value>15</value>
+            </entry>
+            <entry>
+                <key>role</key>
+                <value>Sales Team</value>
+            </entry>
+            <entry>
+                <key>email</key>
+                <value>test665@test.com</value>
+            </entry>
+            <entry>
+                <key>cellPhone</key>
+                <value>0743519649</value>
+            </entry>
+            <entry>
+                <key>isLocked</key>
+                <value>false</value>
+            </entry>
+        </data>
+        <date/>
+        <duration>3118820</duration>
+        <expected>PASS</expected>
+        <status>PASS</status>
+    </report>
+    <report method="users[16: {name=User Suite 16, action=Assert User, expected=PASS, firstName=Test 310, lastName=Test 310, userName=test310, password=1234, customer=15, role=Admin, email=test310@test.com, cellPhone=0743519649, isLocked=false}]">
+        <date/>
+        <duration>1078543277</duration>
+        <status>PASS</status>
+    </report>
+    <report method="users[17: {name=User Suite 17, action=Assert User, expected=FAIL, firstName=Test 280, lastName=Test 280, userName=test280, password=1234, customer=15, role=Sales Team, email=test280@test.com, cellPhone=0743519649, isLocked=false}]">
+        <date/>
+        <duration>1085573458</duration>
+        <status>PASS</status>
+    </report>
+    <report method="users[18: {name=User Suite 18, action=Edit User, expected=PASS, firstName=Test 600, lastName=Test 600, userName=test600, password=1234, customer=16, role=Customer, email=test600@test.com, cellPhone=0743519649, isLocked=false}]">
+        <data>
+            <entry>
+                <key>name</key>
+                <value>User Suite 18</value>
+            </entry>
+            <entry>
+                <key>action</key>
+                <value>Edit User</value>
+            </entry>
+            <entry>
+                <key>expected</key>
+                <value>PASS</value>
+            </entry>
+            <entry>
+                <key>firstName</key>
+                <value>Test 600</value>
+            </entry>
+            <entry>
+                <key>lastName</key>
+                <value>Test 600</value>
+            </entry>
+            <entry>
+                <key>userName</key>
+                <value>test600</value>
+            </entry>
+            <entry>
+                <key>password</key>
+                <value>1234</value>
+            </entry>
+            <entry>
+                <key>customer</key>
+                <value>16</value>
+            </entry>
+            <entry>
+                <key>role</key>
+                <value>Customer</value>
+            </entry>
+            <entry>
+                <key>email</key>
+                <value>test600@test.com</value>
+            </entry>
+            <entry>
+                <key>cellPhone</key>
+                <value>0743519649</value>
+            </entry>
+            <entry>
+                <key>isLocked</key>
+                <value>false</value>
+            </entry>
+        </data>
+        <date/>
+        <duration>1693073</duration>
+        <expected>PASS</expected>
+        <status>PASS</status>
+    </report>
+    <report method="users[19: {name=User Suite 19, action=Add User, expected=FAIL, firstName=Test 970, lastName=Test 970, userName=test970, password=1234, customer=15, role=Admin, email=test970@test.com, cellPhone=0743519649, isLocked=false}]">
+        <data>
+            <entry>
+                <key>name</key>
+                <value>User Suite 19</value>
+            </entry>
+            <entry>
+                <key>action</key>
+                <value>Add User</value>
+            </entry>
+            <entry>
+                <key>expected</key>
+                <value>FAIL</value>
+            </entry>
+            <entry>
+                <key>firstName</key>
+                <value>Test 970</value>
+            </entry>
+            <entry>
+                <key>lastName</key>
+                <value>Test 970</value>
+            </entry>
+            <entry>
+                <key>userName</key>
+                <value>test970</value>
+            </entry>
+            <entry>
+                <key>password</key>
+                <value>1234</value>
+            </entry>
+            <entry>
+                <key>customer</key>
+                <value>15</value>
+            </entry>
+            <entry>
+                <key>role</key>
+                <value>Admin</value>
+            </entry>
+            <entry>
+                <key>email</key>
+                <value>test970@test.com</value>
+            </entry>
+            <entry>
+                <key>cellPhone</key>
+                <value>0743519649</value>
+            </entry>
+            <entry>
+                <key>isLocked</key>
+                <value>false</value>
+            </entry>
+        </data>
+        <date/>
+        <duration>1346146294</duration>
+        <expected>FAIL</expected>
+        <screenshots>screenshots/1542958807872.png</screenshots>
+        <screenshots>screenshots/1542958808272.png</screenshots>
+        <screenshots>screenshots/1542958808689.png</screenshots>
+        <status>PASS</status>
+    </report>
+</report-overview>

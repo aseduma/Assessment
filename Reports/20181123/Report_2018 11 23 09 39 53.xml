@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<report-overview reportDate="2018-11-23T09:39:53.969+02:00">
+    <report method="verifyBreed">
+        <comments>https://dog.ceo/api/breeds/list/allI/O error: Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect</comments>
+        <date/>
+        <duration>1467271274</duration>
+        <status>FAIL</status>
+    </report>
+    <report method="produceRandomImageOrLinkForSubBreed">
+        <comments>https://dog.ceo/api/breed/retriever-golden/images/randomI/O error: Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect</comments>
+        <date/>
+        <duration>1200247466</duration>
+        <status>FAIL</status>
+    </report>
+    <report method="listAllBreeds">
+        <comments>https://dog.ceo/api/breeds/list/allI/O error: Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect</comments>
+        <date/>
+        <duration>1286478294</duration>
+        <status>FAIL</status>
+    </report>
+    <report method="listSubBreeds">
+        <comments>https://dog.ceo/api/breed/retriever/listI/O error: Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect</comments>
+        <date/>
+        <duration>1018296823</duration>
+        <status>FAIL</status>
+    </report>
+</report-overview>

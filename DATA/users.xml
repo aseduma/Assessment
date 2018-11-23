@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<users>
+    <user action="Edit User" expected="FAIL" name="User Suite 0">
+        <cellPhone>0743519649</cellPhone>
+        <customer>15</customer>
+        <email>test900@test.com</email>
+        <firstName>Test 900</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 900</lastName>
+        <password>1234</password>
+        <role>Customer</role>
+        <userName>test900</userName>
+    </user>
+    <user action="Remove User" expected="FAIL" name="User Suite 1">
+        <cellPhone>0743519649</cellPhone>
+        <customer>16</customer>
+        <email>test982@test.com</email>
+        <firstName>Test 982</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 982</lastName>
+        <password>1234</password>
+        <role>Sales Team</role>
+        <userName>test982</userName>
+    </user>
+    <user action="Add User" expected="PASS" name="User Suite 2">
+        <cellPhone>0743519649</cellPhone>
+        <customer>16</customer>
+        <email>test818@test.com</email>
+        <firstName>Test 818</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 818</lastName>
+        <password>1234</password>
+        <role>Admin</role>
+        <userName>test818</userName>
+    </user>
+    <user action="Edit User" expected="PASS" name="User Suite 3">
+        <cellPhone>0743519649</cellPhone>
+        <customer>16</customer>
+        <email>test314@test.com</email>
+        <firstName>Test 314</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 314</lastName>
+        <password>1234</password>
+        <role>Admin</role>
+        <userName>test314</userName>
+    </user>
+    <user action="Assert User" expected="PASS" name="User Suite 4">
+        <cellPhone>0743519649</cellPhone>
+        <customer>15</customer>
+        <email>test325@test.com</email>
+        <firstName>Test 325</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 325</lastName>
+        <password>1234</password>
+        <role>Sales Team</role>
+        <userName>test325</userName>
+    </user>
+    <user action="Edit User" expected="PASS" name="User Suite 5">
+        <cellPhone>0743519649</cellPhone>
+        <customer>16</customer>
+        <email>test546@test.com</email>
+        <firstName>Test 546</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 546</lastName>
+        <password>1234</password>
+        <role>Customer</role>
+        <userName>test546</userName>
+    </user>
+    <user action="Assert User" expected="PASS" name="User Suite 6">
+        <cellPhone>0743519649</cellPhone>
+        <customer>15</customer>
+        <email>test169@test.com</email>
+        <firstName>Test 169</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 169</lastName>
+        <password>1234</password>
+        <role>Admin</role>
+        <userName>test169</userName>
+    </user>
+    <user action="Edit User" expected="PASS" name="User Suite 7">
+        <cellPhone>0743519649</cellPhone>
+        <customer>16</customer>
+        <email>test855@test.com</email>
+        <firstName>Test 855</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 855</lastName>
+        <password>1234</password>
+        <role>Sales Team</role>
+        <userName>test855</userName>
+    </user>
+    <user action="Assert User" expected="PASS" name="User Suite 8">
+        <cellPhone>0743519649</cellPhone>
+        <customer>15</customer>
+        <email>test127@test.com</email>
+        <firstName>Test 127</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 127</lastName>
+        <password>1234</password>
+        <role>Admin</role>
+        <userName>test127</userName>
+    </user>
+    <user action="Edit User" expected="FAIL" name="User Suite 9">
+        <cellPhone>0743519649</cellPhone>
+        <customer>15</customer>
+        <email>test775@test.com</email>
+        <firstName>Test 775</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 775</lastName>
+        <password>1234</password>
+        <role>Admin</role>
+        <userName>test775</userName>
+    </user>
+    <user action="Add User" expected="PASS" name="User Suite 10">
+        <cellPhone>0743519649</cellPhone>
+        <customer>15</customer>
+        <email>test567@test.com</email>
+        <firstName>Test 567</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 567</lastName>
+        <password>1234</password>
+        <role>Customer</role>
+        <userName>test567</userName>
+    </user>
+    <user action="Assert User" expected="FAIL" name="User Suite 11">
+        <cellPhone>0743519649</cellPhone>
+        <customer>16</customer>
+        <email>test775@test.com</email>
+        <firstName>Test 775</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 775</lastName>
+        <password>1234</password>
+        <role>Sales Team</role>
+        <userName>test775</userName>
+    </user>
+    <user action="Assert User" expected="FAIL" name="User Suite 12">
+        <cellPhone>0743519649</cellPhone>
+        <customer>16</customer>
+        <email>test357@test.com</email>
+        <firstName>Test 357</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 357</lastName>
+        <password>1234</password>
+        <role>Admin</role>
+        <userName>test357</userName>
+    </user>
+    <user action="Add User" expected="FAIL" name="User Suite 13">
+        <cellPhone>0743519649</cellPhone>
+        <customer>16</customer>
+        <email>test60@test.com</email>
+        <firstName>Test 60</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 60</lastName>
+        <password>1234</password>
+        <role>Admin</role>
+        <userName>test60</userName>
+    </user>
+    <user action="Remove User" expected="PASS" name="User Suite 14">
+        <cellPhone>0743519649</cellPhone>
+        <customer>15</customer>
+        <email>test278@test.com</email>
+        <firstName>Test 278</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 278</lastName>
+        <password>1234</password>
+        <role>Admin</role>
+        <userName>test278</userName>
+    </user>
+    <user action="Edit User" expected="PASS" name="User Suite 15">
+        <cellPhone>0743519649</cellPhone>
+        <customer>15</customer>
+        <email>test665@test.com</email>
+        <firstName>Test 665</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 665</lastName>
+        <password>1234</password>
+        <role>Sales Team</role>
+        <userName>test665</userName>
+    </user>
+    <user action="Assert User" expected="PASS" name="User Suite 16">
+        <cellPhone>0743519649</cellPhone>
+        <customer>15</customer>
+        <email>test310@test.com</email>
+        <firstName>Test 310</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 310</lastName>
+        <password>1234</password>
+        <role>Admin</role>
+        <userName>test310</userName>
+    </user>
+    <user action="Assert User" expected="FAIL" name="User Suite 17">
+        <cellPhone>0743519649</cellPhone>
+        <customer>15</customer>
+        <email>test280@test.com</email>
+        <firstName>Test 280</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 280</lastName>
+        <password>1234</password>
+        <role>Sales Team</role>
+        <userName>test280</userName>
+    </user>
+    <user action="Edit User" expected="PASS" name="User Suite 18">
+        <cellPhone>0743519649</cellPhone>
+        <customer>16</customer>
+        <email>test600@test.com</email>
+        <firstName>Test 600</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 600</lastName>
+        <password>1234</password>
+        <role>Customer</role>
+        <userName>test600</userName>
+    </user>
+    <user action="Add User" expected="FAIL" name="User Suite 19">
+        <cellPhone>0743519649</cellPhone>
+        <customer>15</customer>
+        <email>test970@test.com</email>
+        <firstName>Test 970</firstName>
+        <isLocked>false</isLocked>
+        <lastName>Test 970</lastName>
+        <password>1234</password>
+        <role>Admin</role>
+        <userName>test970</userName>
+    </user>
+</users>
