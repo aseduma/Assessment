@@ -1,0 +1,15 @@
+2018-11-23 13:31:11 INFO  Application:27 - Test start Fri Nov 23 13:31:11 CAT 2018
+2018-11-23 13:31:29 INFO  DogTest:109 - https://dog.ceo/api/breeds/list/all
+2018-11-23 13:31:32 INFO  DogTest:156 - https://dog.ceo/api/breed/retriever-golden/images/random
+2018-11-23 13:31:36 INFO  DogTest:84 - https://dog.ceo/api/breeds/list/all
+2018-11-23 13:31:39 INFO  DogTest:133 - https://dog.ceo/api/breed/retriever/list
+2018-11-23 13:31:55 ERROR ReportGenerator:52 - javax.xml.bind.MarshalException
+ - with linked exception:
+[com.sun.istack.internal.SAXException2: class java.util.LinkedHashMap nor any of its super class is known to this context.
+javax.xml.bind.JAXBException: class java.util.LinkedHashMap nor any of its super class is known to this context.]
+2018-11-23 13:31:55 INFO  Application:30 - verifyBreed(com.assessment.task1.tests.dog.DogTest): expected:<PASS> but was:<FAIL>
+2018-11-23 13:31:55 INFO  Application:30 - produceRandomImageOrLinkForSubBreed(com.assessment.task1.tests.dog.DogTest): expected:<PASS> but was:<FAIL>
+2018-11-23 13:31:55 INFO  Application:30 - listAllBreeds(com.assessment.task1.tests.dog.DogTest): expected:<PASS> but was:<FAIL>
+2018-11-23 13:31:55 INFO  Application:30 - listSubBreeds(com.assessment.task1.tests.dog.DogTest): expected:<PASS> but was:<FAIL>
+2018-11-23 13:31:55 INFO  Application:32 - false
+2018-11-23 13:31:55 INFO  Application:33 - Test end Fri Nov 23 13:31:55 CAT 2018
