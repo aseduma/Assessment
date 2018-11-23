@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<report-overview reportDate="2018-11-23T13:16:28.242+02:00">
+    <report method="verifyBreed">
+        <comments>https://dog.ceo/api/breeds/list/all</comments>
+        <data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">Breed [status=success, message={affenpinscher=[], african=[], airedale=[], akita=[], appenzeller=[], basenji=[], beagle=[], bluetick=[], borzoi=[], bouvier=[], boxer=[], brabancon=[], briard=[], bulldog=[boston, french], bullterrier=[staffordshire], cairn=[], cattledog=[australian], chihuahua=[], chow=[], clumber=[], cockapoo=[], collie=[border], coonhound=[], corgi=[cardigan], cotondetulear=[], dachshund=[], dalmatian=[], dane=[great], deerhound=[scottish], dhole=[], dingo=[], doberman=[], elkhound=[norwegian], entlebucher=[], eskimo=[], frise=[bichon], germanshepherd=[], greyhound=[italian], groenendael=[], hound=[afghan, basset, blood, english, ibizan, walker], husky=[], keeshond=[], kelpie=[], komondor=[], kuvasz=[], labrador=[], leonberg=[], lhasa=[], malamute=[], malinois=[], maltese=[], mastiff=[bull, tibetan], mexicanhairless=[], mix=[], mountain=[bernese, swiss], newfoundland=[], otterhound=[], papillon=[], pekinese=[], pembroke=[], pinscher=[miniature], pointer=[german, germanlonghair], pomeranian=[], poodle=[miniature, standard, toy], pug=[], puggle=[], pyrenees=[], redbone=[], retriever=[chesapeake, curly, flatcoated, golden], ridgeback=[rhodesian], rottweiler=[], saluki=[], samoyed=[], schipperke=[], schnauzer=[giant, miniature], setter=[english, gordon, irish], sheepdog=[english, shetland], shiba=[], shihtzu=[], spaniel=[blenheim, brittany, cocker, irish, japanese, sussex, welsh], springer=[english], stbernard=[], terrier=[american, australian, bedlington, border, dandie, fox, irish, kerryblue, lakeland, norfolk, norwich, patterdale, russell, scottish, sealyham, silky, tibetan, toy, westhighland, wheaten, yorkshire], vizsla=[], weimaraner=[], whippet=[], wolfhound=[irish]}]</data>
+        <date/>
+        <duration>941429228</duration>
+        <status>PASS</status>
+    </report>
+    <report method="produceRandomImageOrLinkForSubBreed">
+        <comments>https://dog.ceo/api/breed/retriever-golden/images/random</comments>
+        <data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">BreedRandomImage [status=success, message=https://images.dog.ceo/breeds/retriever-golden/n02099601_6814.jpg]</data>
+        <date/>
+        <duration>300086051</duration>
+        <status>PASS</status>
+    </report>
+    <report method="listAllBreeds">
+        <comments>https://dog.ceo/api/breeds/list/all</comments>
+        <data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">Breed [status=success, message={affenpinscher=[], african=[], airedale=[], akita=[], appenzeller=[], basenji=[], beagle=[], bluetick=[], borzoi=[], bouvier=[], boxer=[], brabancon=[], briard=[], bulldog=[boston, french], bullterrier=[staffordshire], cairn=[], cattledog=[australian], chihuahua=[], chow=[], clumber=[], cockapoo=[], collie=[border], coonhound=[], corgi=[cardigan], cotondetulear=[], dachshund=[], dalmatian=[], dane=[great], deerhound=[scottish], dhole=[], dingo=[], doberman=[], elkhound=[norwegian], entlebucher=[], eskimo=[], frise=[bichon], germanshepherd=[], greyhound=[italian], groenendael=[], hound=[afghan, basset, blood, english, ibizan, walker], husky=[], keeshond=[], kelpie=[], komondor=[], kuvasz=[], labrador=[], leonberg=[], lhasa=[], malamute=[], malinois=[], maltese=[], mastiff=[bull, tibetan], mexicanhairless=[], mix=[], mountain=[bernese, swiss], newfoundland=[], otterhound=[], papillon=[], pekinese=[], pembroke=[], pinscher=[miniature], pointer=[german, germanlonghair], pomeranian=[], poodle=[miniature, standard, toy], pug=[], puggle=[], pyrenees=[], redbone=[], retriever=[chesapeake, curly, flatcoated, golden], ridgeback=[rhodesian], rottweiler=[], saluki=[], samoyed=[], schipperke=[], schnauzer=[giant, miniature], setter=[english, gordon, irish], sheepdog=[english, shetland], shiba=[], shihtzu=[], spaniel=[blenheim, brittany, cocker, irish, japanese, sussex, welsh], springer=[english], stbernard=[], terrier=[american, australian, bedlington, border, dandie, fox, irish, kerryblue, lakeland, norfolk, norwich, patterdale, russell, scottish, sealyham, silky, tibetan, toy, westhighland, wheaten, yorkshire], vizsla=[], weimaraner=[], whippet=[], wolfhound=[irish]}]</data>
+        <date/>
+        <duration>458215921</duration>
+        <status>PASS</status>
+    </report>
+    <report method="listSubBreeds">
+        <comments>https://dog.ceo/api/breed/retriever/list</comments>
+        <data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">SubBreed [status=success, message=[chesapeake, curly, flatcoated, golden]]</data>
+        <date/>
+        <duration>400815651</duration>
+        <status>PASS</status>
+    </report>
+</report-overview>

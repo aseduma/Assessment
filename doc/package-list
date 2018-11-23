@@ -1,0 +1,14 @@
+com.assessment
+com.assessment.configuration
+com.assessment.model
+com.assessment.report
+com.assessment.report.model
+com.assessment.task1.model.dog
+com.assessment.task1.tests.dog
+com.assessment.task1.utils
+com.assessment.task2.config
+com.assessment.task2.model.user
+com.assessment.task2.page_object_model
+com.assessment.task2.page_object_model.user
+com.assessment.task2.tests.user
+com.assessment.utils
