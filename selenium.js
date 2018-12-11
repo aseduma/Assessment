@@ -1,0 +1,9 @@
+function sleep(milliseconds) {var start = new Date().getTime();for (var i = 0; i < 1e7; i++) {if ((new Date().getTime() - start) > milliseconds){break;}}}
+function getElement(locator) {var element = document.getElementById(locator);if(element != null){return element;}element = document.getElementsByName(locator)[0];if(element != null){return element;}return document.evaluate(locator, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;}
+function isExist(element){return (typeof(element) != 'undefined' && element != null);}
+function event(element){try{if(isExist(element)){if(element.getAttribute('onchange') != null && element.getAttribute('onchange') != ''){element.onchange();sleep(250);}else if(element.getAttribute('onclick') != null && element.getAttribute('onclick') != ''){element.onclick();sleep(250);}}}catch(e){}}
+var locator = arguments[0];var element = getElement(locator);if(!isExist(element)){sleep(500);element = getElement(locator);}
+if(!element.disabled && !element.readOnly){var data = arguments[1];var tagName = element.tagName.toLowerCase();if(tagName == 'select'){
+for(var i = 0; i < element.options.length; i++) {if(element.options[i].text.toUpperCase() == data.toUpperCase()){element.options[i].setAttribute('selected',true);break;}}event(element);} else{
+var type = element.type;if(tagName == 'input' || tagName == 'textarea'){if(type == 'checkbox'){element.checked= (data.toLowerCase() == 'true' || data.toLowerCase() == 'yes');return;}else if(type == 'radio'){
+var isDataBlank = (0 == data.toString().trim().length);if(!isDataBlank){var elementValue = element.value;if(elementValue === elementValue.toUpperCase()){data = data.toUpperCase();}element.setAttribute('value',data);return;}} else{element.value=data;return;}}}}
